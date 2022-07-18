@@ -1,0 +1,37 @@
+<style> form{margin: 0; height: 100%; overflow: hidden}</style>
+
+
+<form id="myForm" class="p-2 border border-light rounded bg-light" onsubmit="handleFormSubmit(this)" style="margin: 0; height: 100%; overflow: hidden">   
+    <div id="message"></div>
+      <input type="text" id="RecId" name="RecId" value="" style="display: none">
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="name" >ชื่อ สกุล</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="ชื่อ สกุล" required>
+      </div>
+    </div>
+      <div class="form-row">
+     <div class="form-group col-md-6">
+        <label for="exampleFormControlSelect1">ระดับชั้น</label>
+        <select class="form-control" id="country" name="country" required>
+          <option selected disabled value="">เลือกระดับชั้น</option>
+        </select>
+      </div>
+        <div class="form-group col-md-6" >
+        <label for="date">วันที่ชั่ง/วัด</label>
+        <input type="date" class="form-control date" id="date" name="date"  required>
+      </div>
+	  </div> 
+        <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="data1" >น้ำหนัก</label>
+        <input type="text" class="form-control" id="data1" name="data1" placeholder="น้ำหนัก" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="data2" >ส่วนสูง</label>
+        <input type="text" class="form-control" id="data2" name="data2" placeholder="ส่วนสูง" required>
+      </div>
+    </div>
+	  <button id="btnSubmit" type="submit" class="btn bd-green-500" >บันทึกข้อมูล</button>
+    <input class="btn btn-secondary" type="reset" value="รีเซ็ต">
+</form>
